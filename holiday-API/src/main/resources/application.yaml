@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: holiday-API
+  cache:
+    type: caffeine
+    caffeine:
+      spec: expireAfterWrite=10m
+
+server:
+  port: 8082
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+holiday:
+  api:
+    base-url: https://date.nager.at/api/v3
+    country: GR
